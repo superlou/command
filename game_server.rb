@@ -49,6 +49,6 @@ class RouteMovementSystem < Artemis::EntityProcessingSystem
 	end
 
 	def process_entity(entity)
-		puts "process #{entity}"
+		#puts "process #{entity}"
 	end
 end
