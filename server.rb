@@ -23,11 +23,6 @@ rack_pid = fork do
 	exit
 end
 
-# faye_server_pid = fork do
-# 	bayeux = Faye::RackAdapter.new(mount: '/faye', timeout: 25)
-# 	run bayeux
-# end
-
 gs = GameServer.new
 
 begin
