@@ -17,6 +17,9 @@ class GameServer
 									 TopSpeedComponent.new)
 		force.add_to_world
 
+		client_handler = @world.create_entity
+		client_handler.add_to_world
+
 		game_loop
 	end
 
