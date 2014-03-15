@@ -2,16 +2,31 @@ require 'rubygems'
 require 'bundler/setup'
 
 require 'rack'
+require 'faye'
 require './game_server.rb'
 
-web_server_pid = fork do
+rack_pid = fork do
+	client_dir = File.join(Dir.pwd(),'client')
+
 	client_app = Rack::Builder.new do
-	  run Rack::Directory.new(File.join(Dir.pwd(),'client'))
+	  use Rack::CommonLogger
+
+	  use Rack::Static, urls: {"/client" => 'index.html'}, root: client_dir
+	  map "/client" do
+	  	run Rack::Directory.new(client_dir)
+  	  end
+
+	  run Faye::RackAdapter.new(mount: '/faye', timeout: 25)
 	end
 
 	Rack::Handler::Thin.run(client_app, :port => 8080)
 	exit
 end
+
+# faye_server_pid = fork do
+# 	bayeux = Faye::RackAdapter.new(mount: '/faye', timeout: 25)
+# 	run bayeux
+# end
 
 gs = GameServer.new
 
