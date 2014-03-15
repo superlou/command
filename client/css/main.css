@@ -100,7 +100,7 @@ textarea {
 #map {
     display: block;
     height: 400px;
-    width: 1000px;
+    width: 100%;
 }
 
 
