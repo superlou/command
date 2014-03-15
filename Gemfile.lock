@@ -4,6 +4,14 @@ GIT
   specs:
     artemis (0.0.1)
 
+GIT
+  remote: git@github.com:superlou/census_api.git
+  revision: d172562136321a95724c4bf75dec5c9d3740b785
+  specs:
+    census_api (1.0.2)
+      hpricot
+      rest-client
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,9 +38,13 @@ GEM
     faye-websocket (0.7.2)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.3.1)
+    hpricot (0.8.6)
     http_parser.rb (0.6.0)
+    mime-types (2.2)
     multi_json (1.9.0)
     rack (1.5.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -44,6 +56,7 @@ PLATFORMS
 
 DEPENDENCIES
   artemis!
+  census_api!
   faye
   rack
   thin
