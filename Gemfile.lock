@@ -1,0 +1,14 @@
+GIT
+  remote: git://github.com/vinova/Artemis-Ruby.git
+  revision: 8f9368802160eae9140cb153d66ed759da3f5e5f
+  specs:
+    artemis (0.0.1)
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  artemis!

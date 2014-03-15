@@ -1,0 +1,1 @@
+gem 'artemis', git: 'git://github.com/vinova/Artemis-Ruby.git'
