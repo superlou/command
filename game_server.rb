@@ -6,17 +6,22 @@ class GameServer
 	def run
 		puts "Starting server..."
 		@world = Artemis::World.new
-		@world.add_manager Artemis::TagManager.new
+		@world.add_manager Artemis::GroupManager.new
 
 		@world.set_system(RouteMovementSystem.new).setup
 		@world.set_system(PlayerUpdateSystem.new).setup
 		@world.set_system(FindCitiesSystem.new).setup
+		@world.set_system(GrowCitiesSystem.new).setup
 
-		@world.create_entity(LocationComponent.new(39.95234, -75.16191),
-							 NameComponent.new('Philadelphia')).add_to_world
+		c = @world.create_entity(LocationComponent.new(39.95234, -75.16191),
+							 NameComponent.new('Philadelphia'),
+							 PopulationComponent.new(1000)).add_to_world
+		@world.get_manager(Artemis::GroupManager).add(c, "cities")
 
-		@world.create_entity(LocationComponent.new(39.80147, -74.96761),
-							 NameComponent.new('Camden')).add_to_world
+		c = @world.create_entity(LocationComponent.new(39.80147, -74.96761),
+							 NameComponent.new('Camden'),
+							 PopulationComponent.new(1000)).add_to_world
+		@world.get_manager(Artemis::GroupManager).add(c, "cities")
 
 		force = @world.create_entity(LocationComponent.new(32, 10),
 									 RouteComponent.new,
@@ -77,12 +82,19 @@ class PlayerUpdateSystem < Artemis::EntityProcessingSystem
 			send_welcome_data(entity)
 			@player_mapper.get(entity).received_welcome = true
 		end
+
+		send_city_data(entity)
 	end
 
 	def send_welcome_data(entity)
+
+	end
+
+	def send_city_data(entity)
 		data = self.world.get_system(FindCitiesSystem).all_cities.map { |e|
-			serialize(e, NameComponent, LocationComponent)
+			serialize(e, NameComponent, LocationComponent, PopulationComponent)
 		}
+
 		@faye_client_mapper.get(entity).faye_client.publish '/public', {type: 'update_cities', data: data}
 	end
 
@@ -96,9 +108,26 @@ class PlayerUpdateSystem < Artemis::EntityProcessingSystem
 	end
 end
 
+class GrowCitiesSystem < Artemis::EntityProcessingSystem
+	def initialize
+		super(Artemis::Aspect.new_for_all LocationComponent, NameComponent, PopulationComponent)
+	end
+
+	def setup
+		@population_mapper = Artemis::ComponentMapper.new(PopulationComponent, @world)
+	end
+
+	def process_entity(entity)
+		current_population = @population_mapper.get(entity).population
+		new_population = current_population * 1.001
+		@population_mapper.get(entity).population = new_population
+	end
+end
+
+
 class FindCitiesSystem < Artemis::EntityProcessingSystem
 	def initialize
-		super(Artemis::Aspect.new_for_all LocationComponent, NameComponent)
+		super(Artemis::Aspect.new_for_all LocationComponent, NameComponent, PopulationComponent)
 	end
 
 	def setup

@@ -13,6 +13,14 @@ class Component < Artemis::Component
 	end
 end
 
+class PopulationComponent < Component
+	attr_accessor :population
+
+	def initialize(population)
+		@population = population
+	end
+end
+
 class LocationComponent < Component
 	attr_accessor :lat, :lon
 
