@@ -16,6 +16,7 @@ rack_pid = fork do
 	  	run Rack::Directory.new(client_dir)
   	  end
 
+  	  Faye::WebSocket.load_adapter('thin')
 	  run Faye::RackAdapter.new(mount: '/faye', timeout: 25)
 	end
 

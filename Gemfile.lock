@@ -57,6 +57,7 @@ PLATFORMS
 DEPENDENCIES
   artemis!
   census_api!
+  eventmachine
   faye
   rack
   thin
