@@ -2,7 +2,18 @@ require 'rubygems'
 require 'bundler/setup'
 require 'artemis'
 
-class LocationComponent < Artemis::Component
+class Component < Artemis::Component
+	def serialize
+		vars = {}
+		instance_variables.each do |ivar| 
+			vars[ivar.to_s[1..-1]] = instance_variable_get(ivar)
+		end
+
+		vars
+	end
+end
+
+class LocationComponent < Component
 	attr_accessor :lat, :lon
 
 	def initialize(lat, lon)
@@ -11,15 +22,15 @@ class LocationComponent < Artemis::Component
 	end
 end
 
-class RouteComponent < Artemis::Component
+class RouteComponent < Component
 	attr_accessor :path, :arrival_time
 end
 
-class TopSpeedComponent < Artemis::Component
+class TopSpeedComponent < Component
 	attr_accessor :top_speed
 end
 
-class PlayerComponent < Artemis::Component
+class PlayerComponent < Component
 	attr_accessor :received_welcome
 
 	def initialize
@@ -27,10 +38,18 @@ class PlayerComponent < Artemis::Component
 	end
 end
 
-class FayeClientComponent < Artemis::Component
+class FayeClientComponent < Component
 	attr_accessor :faye_client
 
 	def initialize(faye_client)
 		@faye_client = faye_client
+	end
+end
+
+class NameComponent < Component
+	attr_accessor :name
+
+	def initialize(name)
+		@name = name
 	end
 end
