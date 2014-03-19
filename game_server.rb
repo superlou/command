@@ -1,6 +1,7 @@
 require 'artemis'
 require './components.rb'
 require 'eventmachine'
+require 'yaml'
 
 class GameServer
 	def run
@@ -10,15 +11,15 @@ class GameServer
 
 		load_systems
 
-		c = @world.create_entity(LocationComponent.new(39.95234, -75.16191),
-							 NameComponent.new('Philadelphia'),
-							 PopulationComponent.new(1000)).add_to_world
-		@world.get_manager(Artemis::GroupManager).add(c, "cities")
-
-		c = @world.create_entity(LocationComponent.new(39.80147, -74.96761),
-							 NameComponent.new('Camden'),
-							 PopulationComponent.new(1000)).add_to_world
-		@world.get_manager(Artemis::GroupManager).add(c, "cities")
+		city_populations = YAML.load(File.read 'data/city_data.yml')
+		city_populations.each do |cp|
+			c = @world.create_entity(LocationComponent.new(cp['lat'], cp['lon']),
+					 NameComponent.new(cp['name']),
+					 PopulationComponent.new(cp['population'])
+					 )
+			c.add_to_world
+			@world.get_manager(Artemis::GroupManager).add(c, "cities")
+		end
 
 		force = @world.create_entity(LocationComponent.new(32, 10),
 									 RouteComponent.new,

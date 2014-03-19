@@ -1,0 +1,1207 @@
+---
+- name: New York city
+  state_id: '36'
+  place_id: '51000'
+  population: 8175133
+  lat: 40.664274
+  lon: -73.9385
+- name: Los Angeles city
+  state_id: '06'
+  place_id: '44000'
+  population: 3792621
+  lat: 34.019394
+  lon: -118.410825
+- name: Chicago city
+  state_id: '17'
+  place_id: '14000'
+  population: 2695598
+  lat: 41.837551
+  lon: -87.681844
+- name: Houston city
+  state_id: '48'
+  place_id: '35000'
+  population: 2099451
+  lat: 29.780472
+  lon: -95.386342
+- name: Philadelphia city
+  state_id: '42'
+  place_id: '60000'
+  population: 1526006
+  lat: 40.009376
+  lon: -75.133346
+- name: Phoenix city
+  state_id: '04'
+  place_id: '55000'
+  population: 1445632
+  lat: 33.572154
+  lon: -112.090132
+- name: San Antonio city
+  state_id: '48'
+  place_id: '65000'
+  population: 1327407
+  lat: 29.472403
+  lon: -98.525142
+- name: San Diego city
+  state_id: '06'
+  place_id: '66000'
+  population: 1307402
+  lat: 32.8153
+  lon: -117.134993
+- name: Dallas city
+  state_id: '48'
+  place_id: '19000'
+  population: 1197816
+  lat: 32.793333
+  lon: -96.766513
+- name: San Jose city
+  state_id: '06'
+  place_id: '68000'
+  population: 945942
+  lat: 37.296739
+  lon: -121.818909
+- name: Jacksonville city
+  state_id: '12'
+  place_id: '35000'
+  population: 821784
+  lat: 30.336864
+  lon: -81.661603
+- name: Indianapolis city (balance)
+  state_id: '18'
+  place_id: '36003'
+  population: 820445
+  lat: 39.776664
+  lon: -86.145935
+- name: San Francisco city
+  state_id: '06'
+  place_id: '67000'
+  population: 805235
+  lat: 37.727239
+  lon: -123.032229
+- name: Austin city
+  state_id: '48'
+  place_id: '05000'
+  population: 790390
+  lat: 30.304896
+  lon: -97.753831
+- name: Columbus city
+  state_id: '39'
+  place_id: '18000'
+  population: 787033
+  lat: 39.983938
+  lon: -82.984882
+- name: Fort Worth city
+  state_id: '48'
+  place_id: '27000'
+  population: 741206
+  lat: 32.781518
+  lon: -97.346746
+- name: Charlotte city
+  state_id: '37'
+  place_id: '12000'
+  population: 731424
+  lat: 35.208707
+  lon: -80.830739
+- name: Detroit city
+  state_id: '26'
+  place_id: '22000'
+  population: 713777
+  lat: 42.383037
+  lon: -83.102237
+- name: El Paso city
+  state_id: '48'
+  place_id: '24000'
+  population: 649121
+  lat: 31.84836
+  lon: -106.426979
+- name: Memphis city
+  state_id: '47'
+  place_id: '48000'
+  population: 646889
+  lat: 35.103543
+  lon: -89.978498
+- name: Baltimore city
+  state_id: '24'
+  place_id: '04000'
+  population: 620961
+  lat: 39.300032
+  lon: -76.610476
+- name: Boston city
+  state_id: '25'
+  place_id: '07000'
+  population: 617594
+  lat: 42.33196
+  lon: -71.020173
+- name: Seattle city
+  state_id: '53'
+  place_id: '63000'
+  population: 608660
+  lat: 47.620499
+  lon: -122.350876
+- name: Washington city
+  state_id: '11'
+  place_id: '50000'
+  population: 601723
+  lat: 38.904103
+  lon: -77.017229
+- name: Nashville-Davidson metropolitan government (balance)
+  state_id: '47'
+  place_id: '52006'
+  population: 601222
+  lat: 36.1718
+  lon: -86.785002
+- name: Denver city
+  state_id: 08
+  place_id: '20000'
+  population: 600158
+  lat: 39.761842
+  lon: -104.881222
+- name: Louisville/Jefferson County metro government (balance)
+  state_id: '21'
+  place_id: '48006'
+  population: 597337
+  lat: 38.165376
+  lon: -85.647377
+- name: Milwaukee city
+  state_id: '55'
+  place_id: '53000'
+  population: 594833
+  lat: 43.063348
+  lon: -87.966695
+- name: Portland city
+  state_id: '41'
+  place_id: '59000'
+  population: 583776
+  lat: 45.536951
+  lon: -122.649971
+- name: Las Vegas city
+  state_id: '32'
+  place_id: '40000'
+  population: 583756
+  lat: 36.229214
+  lon: -115.260082
+- name: Oklahoma City city
+  state_id: '40'
+  place_id: '55000'
+  population: 579999
+  lat: 35.467079
+  lon: -97.513657
+- name: Albuquerque city
+  state_id: '35'
+  place_id: '02000'
+  population: 545852
+  lat: 35.105552
+  lon: -106.647388
+- name: Tucson city
+  state_id: '04'
+  place_id: '77000'
+  population: 520116
+  lat: 32.153695
+  lon: -110.871064
+- name: Fresno city
+  state_id: '06'
+  place_id: '27000'
+  population: 494665
+  lat: 36.783603
+  lon: -119.793445
+- name: Sacramento city
+  state_id: '06'
+  place_id: '64000'
+  population: 466488
+  lat: 38.566592
+  lon: -121.468632
+- name: Long Beach city
+  state_id: '06'
+  place_id: '43000'
+  population: 462257
+  lat: 33.809179
+  lon: -118.15529
+- name: Kansas City city
+  state_id: '29'
+  place_id: '38000'
+  population: 459787
+  lat: 39.125129
+  lon: -94.551028
+- name: Mesa city
+  state_id: '04'
+  place_id: '46000'
+  population: 439041
+  lat: 33.401926
+  lon: -111.717379
+- name: Virginia Beach city
+  state_id: '51'
+  place_id: '82000'
+  population: 437994
+  lat: 36.779322
+  lon: -76.024021
+- name: Atlanta city
+  state_id: '13'
+  place_id: '04000'
+  population: 420003
+  lat: 33.762909
+  lon: -84.422675
+- name: Colorado Springs city
+  state_id: 08
+  place_id: '16000'
+  population: 416427
+  lat: 38.867255
+  lon: -104.760749
+- name: Omaha city
+  state_id: '31'
+  place_id: '37000'
+  population: 408958
+  lat: 41.263765
+  lon: -96.041638
+- name: Raleigh city
+  state_id: '37'
+  place_id: '55000'
+  population: 403892
+  lat: 35.830598
+  lon: -78.641768
+- name: Miami city
+  state_id: '12'
+  place_id: '45000'
+  population: 399457
+  lat: 25.775163
+  lon: -80.208615
+- name: Cleveland city
+  state_id: '39'
+  place_id: '16000'
+  population: 396815
+  lat: 41.478462
+  lon: -81.679435
+- name: Tulsa city
+  state_id: '40'
+  place_id: '75000'
+  population: 391906
+  lat: 36.127949
+  lon: -95.902316
+- name: Oakland city
+  state_id: '06'
+  place_id: '53000'
+  population: 390724
+  lat: 37.769846
+  lon: -122.22569
+- name: Minneapolis city
+  state_id: '27'
+  place_id: '43000'
+  population: 382578
+  lat: 44.963324
+  lon: -93.26832
+- name: Wichita city
+  state_id: '20'
+  place_id: '79000'
+  population: 382368
+  lat: 37.690694
+  lon: -97.342678
+- name: San Juan zona urbana
+  state_id: '72'
+  place_id: '76770'
+  population: 381931
+  lat: 18.406409
+  lon: -66.064004
+- name: Arlington city
+  state_id: '48'
+  place_id: '04000'
+  population: 365438
+  lat: 32.700708
+  lon: -97.124691
+- name: Bakersfield city
+  state_id: '06'
+  place_id: '03526'
+  population: 347483
+  lat: 35.353547
+  lon: -119.034875
+- name: New Orleans city
+  state_id: '22'
+  place_id: '55000'
+  population: 343829
+  lat: 30.05342
+  lon: -89.934502
+- name: Urban Honolulu CDP
+  state_id: '15'
+  place_id: '71550'
+  population: 337256
+  lat: 21.324347
+  lon: -157.84764
+- name: Anaheim city
+  state_id: '06'
+  place_id: '02000'
+  population: 336265
+  lat: 33.855497
+  lon: -117.760071
+- name: Tampa city
+  state_id: '12'
+  place_id: '71000'
+  population: 335709
+  lat: 27.970086
+  lon: -82.479673
+- name: Aurora city
+  state_id: 08
+  place_id: '04000'
+  population: 325078
+  lat: 39.688002
+  lon: -104.68974
+- name: Santa Ana city
+  state_id: '06'
+  place_id: '69000'
+  population: 324528
+  lat: 33.736332
+  lon: -117.882952
+- name: St. Louis city
+  state_id: '29'
+  place_id: '65000'
+  population: 319294
+  lat: 38.635699
+  lon: -90.244582
+- name: Pittsburgh city
+  state_id: '42'
+  place_id: '61000'
+  population: 305704
+  lat: 40.439753
+  lon: -79.976592
+- name: Corpus Christi city
+  state_id: '48'
+  place_id: '17000'
+  population: 305215
+  lat: 27.754252
+  lon: -97.173385
+- name: Riverside city
+  state_id: '06'
+  place_id: '62000'
+  population: 303871
+  lat: 33.938143
+  lon: -117.393168
+- name: Cincinnati city
+  state_id: '39'
+  place_id: '15000'
+  population: 296943
+  lat: 39.140183
+  lon: -84.505829
+- name: Lexington-Fayette urban county
+  state_id: '21'
+  place_id: '46027'
+  population: 295803
+  lat: 38.040149
+  lon: -84.458421
+- name: Anchorage municipality
+  state_id: '02'
+  place_id: '03000'
+  population: 291826
+  lat: 61.17425
+  lon: -149.284329
+- name: Stockton city
+  state_id: '06'
+  place_id: '75000'
+  population: 291707
+  lat: 37.976342
+  lon: -121.313304
+- name: Toledo city
+  state_id: '39'
+  place_id: '77000'
+  population: 287208
+  lat: 41.664071
+  lon: -83.581861
+- name: St. Paul city
+  state_id: '27'
+  place_id: '58000'
+  population: 285068
+  lat: 44.948901
+  lon: -93.104063
+- name: Newark city
+  state_id: '34'
+  place_id: '51000'
+  population: 277140
+  lat: 40.72422
+  lon: -74.172574
+- name: Greensboro city
+  state_id: '37'
+  place_id: '28000'
+  population: 269666
+  lat: 36.096483
+  lon: -79.827108
+- name: Buffalo city
+  state_id: '36'
+  place_id: '11000'
+  population: 261310
+  lat: 42.892492
+  lon: -78.859686
+- name: Plano city
+  state_id: '48'
+  place_id: '58016'
+  population: 259841
+  lat: 33.050769
+  lon: -96.747944
+- name: Lincoln city
+  state_id: '31'
+  place_id: '28000'
+  population: 258379
+  lat: 40.810466
+  lon: -96.680345
+- name: Henderson city
+  state_id: '32'
+  place_id: '31900'
+  population: 257729
+  lat: 36.009655
+  lon: -115.035665
+- name: Fort Wayne city
+  state_id: '18'
+  place_id: '25000'
+  population: 253691
+  lat: 41.088173
+  lon: -85.14388
+- name: Jersey City city
+  state_id: '34'
+  place_id: '36000'
+  population: 247597
+  lat: 40.711417
+  lon: -74.06476
+- name: St. Petersburg city
+  state_id: '12'
+  place_id: '63000'
+  population: 244769
+  lat: 27.761976
+  lon: -82.644055
+- name: Chula Vista city
+  state_id: '06'
+  place_id: '13392'
+  population: 243916
+  lat: 32.62767
+  lon: -117.01517
+- name: Norfolk city
+  state_id: '51'
+  place_id: '57000'
+  population: 242803
+  lat: 36.923015
+  lon: -76.244641
+- name: Orlando city
+  state_id: '12'
+  place_id: '53000'
+  population: 238300
+  lat: 28.415581
+  lon: -81.29899
+- name: Chandler city
+  state_id: '04'
+  place_id: '12000'
+  population: 236123
+  lat: 33.282874
+  lon: -111.854943
+- name: Laredo city
+  state_id: '48'
+  place_id: '41464'
+  population: 236091
+  lat: 27.546953
+  lon: -99.487506
+- name: Madison city
+  state_id: '55'
+  place_id: '48000'
+  population: 233209
+  lat: 43.087815
+  lon: -89.429856
+- name: Winston-Salem city
+  state_id: '37'
+  place_id: '75000'
+  population: 229617
+  lat: 36.102684
+  lon: -80.261027
+- name: Lubbock city
+  state_id: '48'
+  place_id: '45000'
+  population: 229573
+  lat: 33.566479
+  lon: -101.886677
+- name: Baton Rouge city
+  state_id: '22'
+  place_id: '05000'
+  population: 229493
+  lat: 30.448458
+  lon: -91.125901
+- name: Durham city
+  state_id: '37'
+  place_id: '19000'
+  population: 228330
+  lat: 35.981149
+  lon: -78.902925
+- name: Garland city
+  state_id: '48'
+  place_id: '29000'
+  population: 226876
+  lat: 32.909826
+  lon: -96.630334
+- name: Glendale city
+  state_id: '04'
+  place_id: '27820'
+  population: 226721
+  lat: 33.533111
+  lon: -112.189901
+- name: Reno city
+  state_id: '32'
+  place_id: '60600'
+  population: 225221
+  lat: 39.549098
+  lon: -119.849905
+- name: Hialeah city
+  state_id: '12'
+  place_id: '30000'
+  population: 224669
+  lat: 25.869941
+  lon: -80.302865
+- name: Paradise CDP
+  state_id: '32'
+  place_id: '54600'
+  population: 223167
+  lat: 36.080699
+  lon: -115.136895
+- name: Chesapeake city
+  state_id: '51'
+  place_id: '16000'
+  population: 222209
+  lat: 36.679376
+  lon: -76.301788
+- name: Scottsdale city
+  state_id: '04'
+  place_id: '65000'
+  population: 217385
+  lat: 33.684347
+  lon: -111.86112
+- name: North Las Vegas city
+  state_id: '32'
+  place_id: '51800'
+  population: 216961
+  lat: 36.282981
+  lon: -115.089248
+- name: Irving city
+  state_id: '48'
+  place_id: '37000'
+  population: 216290
+  lat: 32.857748
+  lon: -96.970022
+- name: Fremont city
+  state_id: '06'
+  place_id: '26000'
+  population: 214089
+  lat: 37.494461
+  lon: -121.94115
+- name: Irvine city
+  state_id: '06'
+  place_id: '36770'
+  population: 212375
+  lat: 33.678399
+  lon: -117.771254
+- name: Birmingham city
+  state_id: '01'
+  place_id: '07000'
+  population: 212237
+  lat: 33.527444
+  lon: -86.799047
+- name: Rochester city
+  state_id: '36'
+  place_id: '63000'
+  population: 210565
+  lat: 43.169927
+  lon: -77.616891
+- name: San Bernardino city
+  state_id: '06'
+  place_id: '65000'
+  population: 209924
+  lat: 34.141553
+  lon: -117.293557
+- name: Spokane city
+  state_id: '53'
+  place_id: '67000'
+  population: 208916
+  lat: 47.666935
+  lon: -117.433322
+- name: Gilbert town
+  state_id: '04'
+  place_id: '27400'
+  population: 208453
+  lat: 33.310345
+  lon: -111.743121
+- name: Arlington CDP
+  state_id: '51'
+  place_id: '03000'
+  population: 207627
+  lat: 38.878337
+  lon: -77.100703
+- name: Montgomery city
+  state_id: '01'
+  place_id: '51000'
+  population: 205764
+  lat: 32.347174
+  lon: -86.266114
+- name: Boise City city
+  state_id: '16'
+  place_id: 08830
+  population: 205671
+  lat: 43.599335
+  lon: -116.229817
+- name: Richmond city
+  state_id: '51'
+  place_id: '67000'
+  population: 204214
+  lat: 37.531399
+  lon: -77.476009
+- name: Des Moines city
+  state_id: '19'
+  place_id: '21000'
+  population: 203433
+  lat: 41.57259
+  lon: -93.610243
+- name: Modesto city
+  state_id: '06'
+  place_id: '48354'
+  population: 201165
+  lat: 37.637533
+  lon: -121.003049
+- name: Fayetteville city
+  state_id: '37'
+  place_id: '22920'
+  population: 200564
+  lat: 35.08511
+  lon: -78.980263
+- name: Shreveport city
+  state_id: '22'
+  place_id: '70000'
+  population: 199311
+  lat: 32.466879
+  lon: -93.792193
+- name: Akron city
+  state_id: '39'
+  place_id: '01000'
+  population: 199110
+  lat: 41.080456
+  lon: -81.521429
+- name: Tacoma city
+  state_id: '53'
+  place_id: '70000'
+  population: 198397
+  lat: 47.252199
+  lon: -122.459832
+- name: Oxnard city
+  state_id: '06'
+  place_id: '54652'
+  population: 197899
+  lat: 34.202346
+  lon: -119.204603
+- name: Aurora city
+  state_id: '17'
+  place_id: '03012'
+  population: 197899
+  lat: 41.763455
+  lon: -88.290099
+- name: Fontana city
+  state_id: '06'
+  place_id: '24680'
+  population: 196069
+  lat: 34.108793
+  lon: -117.462685
+- name: Yonkers city
+  state_id: '36'
+  place_id: '84000'
+  population: 195976
+  lat: 40.945862
+  lon: -73.867446
+- name: Augusta-Richmond County consolidated government (balance)
+  state_id: '13'
+  place_id: '04204'
+  population: 195844
+  lat: 33.365531
+  lon: -82.073422
+- name: Mobile city
+  state_id: '01'
+  place_id: '50000'
+  population: 195111
+  lat: 30.668426
+  lon: -88.100226
+- name: Little Rock city
+  state_id: '05'
+  place_id: '41000'
+  population: 193524
+  lat: 34.725432
+  lon: -92.358556
+- name: Moreno Valley city
+  state_id: '06'
+  place_id: '49270'
+  population: 193365
+  lat: 33.923253
+  lon: -117.205685
+- name: Glendale city
+  state_id: '06'
+  place_id: '30000'
+  population: 191719
+  lat: 34.181393
+  lon: -118.24583
+- name: Amarillo city
+  state_id: '48'
+  place_id: '03000'
+  population: 190695
+  lat: 35.197839
+  lon: -101.828746
+- name: Huntington Beach city
+  state_id: '06'
+  place_id: '36000'
+  population: 189992
+  lat: 33.690569
+  lon: -118.00933
+- name: Columbus city
+  state_id: '13'
+  place_id: '19000'
+  population: 189885
+  lat: 32.510197
+  lon: -84.874946
+- name: Sunrise Manor CDP
+  state_id: '32'
+  place_id: '71400'
+  population: 189372
+  lat: 36.178482
+  lon: -115.048962
+- name: Grand Rapids city
+  state_id: '26'
+  place_id: '34000'
+  population: 188040
+  lat: 42.961156
+  lon: -85.65557
+- name: Salt Lake City city
+  state_id: '49'
+  place_id: '67000'
+  population: 186440
+  lat: 40.778996
+  lon: -111.93263
+- name: Bayamón zona urbana
+  state_id: '72'
+  place_id: 06593
+  population: 185996
+  lat: 18.380055
+  lon: -66.163253
+- name: Tallahassee city
+  state_id: '12'
+  place_id: '70600'
+  population: 181376
+  lat: 30.455108
+  lon: -84.253419
+- name: Worcester city
+  state_id: '25'
+  place_id: '82000'
+  population: 181045
+  lat: 42.269478
+  lon: -71.807783
+- name: Newport News city
+  state_id: '51'
+  place_id: '56000'
+  population: 180719
+  lat: 37.076166
+  lon: -76.521968
+- name: Huntsville city
+  state_id: '01'
+  place_id: '37000'
+  population: 180105
+  lat: 34.699013
+  lon: -86.67298
+- name: Knoxville city
+  state_id: '47'
+  place_id: '40000'
+  population: 178874
+  lat: 35.97068
+  lon: -83.94927
+- name: Spring Valley CDP
+  state_id: '32'
+  place_id: '68585'
+  population: 178395
+  lat: 36.09874
+  lon: -115.261903
+- name: Providence city
+  state_id: '44'
+  place_id: '59000'
+  population: 178042
+  lat: 41.823056
+  lon: -71.418784
+- name: Santa Clarita city
+  state_id: '06'
+  place_id: '69088'
+  population: 176320
+  lat: 34.402997
+  lon: -118.504166
+- name: Grand Prairie city
+  state_id: '48'
+  place_id: '30464'
+  population: 175396
+  lat: 32.684159
+  lon: -97.021002
+- name: Brownsville city
+  state_id: '48'
+  place_id: '10768'
+  population: 175023
+  lat: 25.998729
+  lon: -97.454928
+- name: Jackson city
+  state_id: '28'
+  place_id: '36000'
+  population: 173514
+  lat: 32.315831
+  lon: -90.212823
+- name: Overland Park city
+  state_id: '20'
+  place_id: '53775'
+  population: 173372
+  lat: 38.889042
+  lon: -94.690584
+- name: Garden Grove city
+  state_id: '06'
+  place_id: '29000'
+  population: 170883
+  lat: 33.778782
+  lon: -117.960472
+- name: Santa Rosa city
+  state_id: '06'
+  place_id: '70098'
+  population: 167815
+  lat: 38.446816
+  lon: -122.706136
+- name: Chattanooga city
+  state_id: '47'
+  place_id: '14000'
+  population: 167674
+  lat: 35.064185
+  lon: -85.248807
+- name: Oceanside city
+  state_id: '06'
+  place_id: '53322'
+  population: 167086
+  lat: 33.224595
+  lon: -117.306228
+- name: Fort Lauderdale city
+  state_id: '12'
+  place_id: '24000'
+  population: 165521
+  lat: 26.141227
+  lon: -80.146731
+- name: Rancho Cucamonga city
+  state_id: '06'
+  place_id: '59451'
+  population: 165269
+  lat: 34.123315
+  lon: -117.564207
+- name: Port St. Lucie city
+  state_id: '12'
+  place_id: '58715'
+  population: 164603
+  lat: 27.280951
+  lon: -80.383762
+- name: Ontario city
+  state_id: '06'
+  place_id: '53896'
+  population: 163924
+  lat: 34.039438
+  lon: -117.604215
+- name: Vancouver city
+  state_id: '53'
+  place_id: '74060'
+  population: 161791
+  lat: 45.634918
+  lon: -122.595734
+- name: Tempe city
+  state_id: '04'
+  place_id: '73000'
+  population: 161719
+  lat: 33.388414
+  lon: -111.931782
+- name: Springfield city
+  state_id: '29'
+  place_id: '70000'
+  population: 159498
+  lat: 37.194152
+  lon: -93.291305
+- name: Carolina zona urbana
+  state_id: '72'
+  place_id: '14290'
+  population: 157832
+  lat: 18.412043
+  lon: -65.979794
+- name: Lancaster city
+  state_id: '06'
+  place_id: '40130'
+  population: 156633
+  lat: 34.693558
+  lon: -118.175305
+- name: Eugene city
+  state_id: '41'
+  place_id: '23850'
+  population: 156185
+  lat: 44.056748
+  lon: -123.116207
+- name: Pembroke Pines city
+  state_id: '12'
+  place_id: '55775'
+  population: 154750
+  lat: 26.021034
+  lon: -80.340397
+- name: Salem city
+  state_id: '41'
+  place_id: '64900'
+  population: 154637
+  lat: 44.923712
+  lon: -123.023189
+- name: Cape Coral city
+  state_id: '12'
+  place_id: '10275'
+  population: 154305
+  lat: 26.643192
+  lon: -81.997364
+- name: Peoria city
+  state_id: '04'
+  place_id: '54050'
+  population: 154065
+  lat: 33.786196
+  lon: -112.308015
+- name: Sioux Falls city
+  state_id: '46'
+  place_id: '59020'
+  population: 153888
+  lat: 43.538335
+  lon: -96.731998
+- name: Springfield city
+  state_id: '25'
+  place_id: '67000'
+  population: 153060
+  lat: 42.115454
+  lon: -72.539978
+- name: Elk Grove city
+  state_id: '06'
+  place_id: '22020'
+  population: 153015
+  lat: 38.414621
+  lon: -121.384961
+- name: Rockford city
+  state_id: '17'
+  place_id: '65000'
+  population: 152871
+  lat: 42.258836
+  lon: -89.064553
+- name: Palmdale city
+  state_id: '06'
+  place_id: '55156'
+  population: 152750
+  lat: 34.591316
+  lon: -118.109001
+- name: Corona city
+  state_id: '06'
+  place_id: '16350'
+  population: 152374
+  lat: 33.862352
+  lon: -117.563857
+- name: Salinas city
+  state_id: '06'
+  place_id: '64224'
+  population: 150441
+  lat: 36.690182
+  lon: -121.633714
+- name: Pomona city
+  state_id: '06'
+  place_id: '58072'
+  population: 149058
+  lat: 34.058494
+  lon: -117.761091
+- name: Pasadena city
+  state_id: '48'
+  place_id: '56000'
+  population: 149043
+  lat: 29.658556
+  lon: -95.150564
+- name: Joliet city
+  state_id: '17'
+  place_id: '38570'
+  population: 147433
+  lat: 41.520244
+  lon: -88.148318
+- name: Paterson city
+  state_id: '34'
+  place_id: '57000'
+  population: 146199
+  lat: 40.914766
+  lon: -74.162829
+- name: Kansas City city
+  state_id: '20'
+  place_id: '36000'
+  population: 145786
+  lat: 39.122539
+  lon: -94.741781
+- name: Torrance city
+  state_id: '06'
+  place_id: '80000'
+  population: 145438
+  lat: 33.834966
+  lon: -118.341431
+- name: Syracuse city
+  state_id: '36'
+  place_id: '73000'
+  population: 145170
+  lat: 43.040998
+  lon: -76.143554
+- name: Bridgeport city
+  state_id: 09
+  place_id: 08000
+  population: 144229
+  lat: 41.187393
+  lon: -73.195757
+- name: Hayward city
+  state_id: '06'
+  place_id: '33000'
+  population: 144186
+  lat: 37.628139
+  lon: -122.106341
+- name: Fort Collins city
+  state_id: 08
+  place_id: '27425'
+  population: 143986
+  lat: 40.548216
+  lon: -105.064833
+- name: Escondido city
+  state_id: '06'
+  place_id: '22804'
+  population: 143911
+  lat: 33.133053
+  lon: -117.074043
+- name: Lakewood city
+  state_id: 08
+  place_id: '43000'
+  population: 142980
+  lat: 39.698942
+  lon: -105.117551
+- name: Naperville city
+  state_id: '17'
+  place_id: '51622'
+  population: 141853
+  lat: 41.749173
+  lon: -88.162019
+- name: Dayton city
+  state_id: '39'
+  place_id: '21000'
+  population: 141527
+  lat: 39.777394
+  lon: -84.199632
+- name: Hollywood city
+  state_id: '12'
+  place_id: '32000'
+  population: 140768
+  lat: 26.030967
+  lon: -80.164609
+- name: Sunnyvale city
+  state_id: '06'
+  place_id: '77000'
+  population: 140081
+  lat: 37.385797
+  lon: -122.026316
+- name: Alexandria city
+  state_id: '51'
+  place_id: '01000'
+  population: 139966
+  lat: 38.820071
+  lon: -77.084063
+- name: Mesquite city
+  state_id: '48'
+  place_id: '47892'
+  population: 139824
+  lat: 32.762883
+  lon: -96.588768
+- name: Metairie CDP
+  state_id: '22'
+  place_id: '50115'
+  population: 138481
+  lat: 29.997793
+  lon: -90.177864
+- name: Hampton city
+  state_id: '51'
+  place_id: '35000'
+  population: 137436
+  lat: 37.04803
+  lon: -76.297149
+- name: Pasadena city
+  state_id: '06'
+  place_id: '56000'
+  population: 137122
+  lat: 34.160592
+  lon: -118.139593
+- name: Orange city
+  state_id: '06'
+  place_id: '53980'
+  population: 136416
+  lat: 33.786971
+  lon: -117.861265
+- name: Savannah city
+  state_id: '13'
+  place_id: '69000'
+  population: 136286
+  lat: 32.002512
+  lon: -81.153557
+- name: Cary town
+  state_id: '37'
+  place_id: '10740'
+  population: 135234
+  lat: 35.780878
+  lon: -78.813274
+- name: Fullerton city
+  state_id: '06'
+  place_id: '28000'
+  population: 135161
+  lat: 33.885714
+  lon: -117.928025
+- name: Warren city
+  state_id: '26'
+  place_id: '84000'
+  population: 134056
+  lat: 42.492904
+  lon: -83.025001
+- name: Clarksville city
+  state_id: '47'
+  place_id: '15160'
+  population: 132929
+  lat: 36.56643
+  lon: -87.345216
+- name: Ponce zona urbana
+  state_id: '72'
+  place_id: '63820'
+  population: 132502
+  lat: 17.987448
+  lon: -66.609708
+- name: McKinney city
+  state_id: '48'
+  place_id: '45744'
+  population: 131117
+  lat: 33.198482
+  lon: -96.668022
+- name: McAllen city
+  state_id: '48'
+  place_id: '45384'
+  population: 129877
+  lat: 26.219652
+  lon: -98.246648
+- name: New Haven city
+  state_id: 09
+  place_id: '52000'
+  population: 129779
+  lat: 41.310809
+  lon: -72.924953
+- name: Sterling Heights city
+  state_id: '26'
+  place_id: '76460'
+  population: 129699
+  lat: 42.581206
+  lon: -83.030316
+- name: West Valley City city
+  state_id: '49'
+  place_id: '83470'
+  population: 129480
+  lat: 40.688493
+  lon: -112.011759
+- name: Columbia city
+  state_id: '45'
+  place_id: '16000'
+  population: 129272
+  lat: 34.029783
+  lon: -80.896566
+- name: Killeen city
+  state_id: '48'
+  place_id: '39148'
+  population: 127921
+  lat: 31.077669
+  lon: -97.731952
