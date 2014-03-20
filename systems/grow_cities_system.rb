@@ -9,7 +9,7 @@ class GrowCitiesSystem < Artemis::EntityProcessingSystem
 
 	def process_entity(entity)
 		current_population = @population_mapper.get(entity).population
-		new_population = current_population * 1.001
+		new_population = current_population * 1.00001
 		@population_mapper.get(entity).population = new_population
 	end
 end

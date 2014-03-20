@@ -21,7 +21,7 @@ class GameServer
 			@world.get_manager(Artemis::GroupManager).add(c, "cities")
 		end
 
-		force = @world.create_entity(LocationComponent.new(32, 10),
+		force = @world.create_entity(LocationComponent.new(39.96234, -75.26191),
 									 RouteComponent.new,
 									 TopSpeedComponent.new)
 		force.add_to_world
