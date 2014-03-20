@@ -22,7 +22,7 @@ function mark_city(data, map) {
 
 function city_description(data) {
 	var text = "<b>" + data.NameComponent.name + "</b><br>";
-	text += "Population: " + Math.round(data.PopulationComponent.population);
+	text += "Population: " + commaSeparateNumber(Math.round(data.PopulationComponent.population));
 	return text;
 }
 
@@ -44,3 +44,10 @@ var subscription = client.subscribe('/public', function(msg) {
 });
 
 client.publish('/public', {type: 'new_client_connection'});
+
+function commaSeparateNumber(val){
+	while (/(\d+)(\d{3})/.test(val.toString())){
+		val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+	}
+	return val;
+}
