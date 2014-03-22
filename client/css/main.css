@@ -99,8 +99,12 @@ textarea {
 
 #map {
     display: block;
-    height: 400px;
+    height: 100%;
     width: 100%;
+}
+
+html, body {
+    height: 100%;
 }
 
 
