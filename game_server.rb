@@ -15,16 +15,19 @@ class GameServer
 		city_populations.each do |cp|
 			c = @world.create_entity(LocationComponent.new(cp['lat'], cp['lon']),
 					 NameComponent.new(cp['name']),
-					 PopulationComponent.new(cp['population'])
+					 PopulationComponent.new(cp['population']),
+					 UuidComponent.new
 					 )
 			c.add_to_world
 			@world.get_manager(Artemis::GroupManager).add(c, "cities")
 		end
 
 		force = @world.create_entity(LocationComponent.new(39.96234, -75.26191),
-									 RouteComponent.new,
-									 TopSpeedComponent.new)
+									 TopSpeedComponent.new,
+									 ForceMakeupComponent.new,
+									 UuidComponent.new)
 		force.add_to_world
+		@world.get_manager(Artemis::GroupManager).add(force, "forces")
 
 
 		@counter = 1

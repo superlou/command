@@ -10,7 +10,7 @@ rack_pid = fork do
 	client_dir = File.join(Dir.pwd(),'client')
 
 	client_app = Rack::Builder.new do
-	  use Rack::CommonLogger
+	  #use Rack::CommonLogger
 
 	  use Rack::Static, urls: {"/client" => 'index.html'}, root: client_dir
 	  map "/client" do

@@ -1,6 +1,6 @@
 class RouteMovementSystem < Artemis::EntityProcessingSystem
 	def initialize
-		super(Artemis::Aspect.new_for_all TopSpeedComponent, RouteComponent, LocationComponent)
+		super(Artemis::Aspect.new_for_all TopSpeedComponent, MovementGoalComponent, LocationComponent)
 	end
 
 	def setup

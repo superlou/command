@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'artemis'
+require 'securerandom'
 
 class Component < Artemis::Component
 	def serialize
@@ -10,6 +11,14 @@ class Component < Artemis::Component
 		end
 
 		vars
+	end
+end
+
+class UuidComponent < Component
+	attr_accessor :uuid
+
+	def initialize
+		@uuid = SecureRandom.uuid
 	end
 end
 
@@ -30,12 +39,16 @@ class LocationComponent < Component
 	end
 end
 
-class RouteComponent < Component
+class MovementGoalComponent < Component
 	attr_accessor :path, :arrival_time
 end
 
 class TopSpeedComponent < Component
 	attr_accessor :top_speed
+end
+
+class ForceMakeupComponent < Component
+	attr_accessor :makeup
 end
 
 class PlayerComponent < Component
