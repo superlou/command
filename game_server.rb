@@ -1,7 +1,12 @@
+require 'rubygems'
+require 'bundler/setup'
+require 'active_support/inflector'
 require 'artemis'
-require './components.rb'
+require 'faye'
 require 'eventmachine'
 require 'yaml'
+
+require './components.rb'
 
 class GameServer
 	def run
@@ -60,4 +65,12 @@ class GameServer
 			@world.set_system(system_class.new).setup
 		end
 	end
+end
+
+gs = GameServer.new
+
+begin
+	gs.run
+rescue Interrupt => e
+	puts "Shutting down game server."
 end

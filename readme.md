@@ -2,6 +2,9 @@ Command
 =======
 A high-level war games simulator based on real-world data that needs a catchier name.
 
+Development
+-----------
+To test the current (depressing) state of the game, start `game_server.rb` and `web_server.rb` files in seperate terminals.
 
 Time Acceleration
 -----------------
