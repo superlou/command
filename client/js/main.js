@@ -68,9 +68,9 @@ var marker_force_icon = L.icon({
 	shadowSize: [41, 41]
 });
 
-function mark_forces(cities, map) {
-	_.each(cities, function(city) {
-		mark_force(city, map);
+function mark_forces(forces, map) {
+	_.each(forces, function(force) {
+		mark_force(force, map);
 	})
 }
 
@@ -81,6 +81,9 @@ function mark_force(data, map) {
 			{icon: marker_force_icon}
 			);
 
+		marker.uuid = data.UuidComponent.uuid;
+		marker.on('click', setActiveForce);
+
 
 		var popup = L.popup().setContent("Force");
 		marker.bindPopup(popup)
@@ -88,6 +91,42 @@ function mark_force(data, map) {
 		marker.addTo(map);
 		force_markers[data.UuidComponent.uuid] = [marker, popup];
 	} else {
+		latLon = [data.LocationComponent.lat, data.LocationComponent.lon];
+		force_markers[data.UuidComponent.uuid][0].setLatLng(latLon);
 		force_markers[data.UuidComponent.uuid][1].setContent("Force");
 	}
+}
+
+// Handle force events
+var activeForce = null;
+var waitingForMoveLocation = false;
+
+$('#map').on('keypress', onMapKeypress);
+map.on('click', onMapClick);
+
+function setActiveForce(e) {
+	activeForce = this;
+}
+
+function onMapKeypress(e) {
+	if ((String.fromCharCode(e.which) == "m") && activeForce) {
+		waitingForMoveLocation = true;
+	}
+}
+
+function onMapClick(e) {
+	if (waitingForMoveLocation) {
+		moveForce(activeForce, [e.latlng.lat, e.latlng.lng]);
+	}
+}
+
+function moveForce(force, goalLatLon) {
+	client.publish('/public', {
+		type: 'player_cmd',
+		cmd: 'move_force',
+		force_uuid: force.uuid,
+		goal: goalLatLon
+	});
+
+	waitingForMoveLocation = false;
 }

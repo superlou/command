@@ -12,6 +12,9 @@ class Component < Artemis::Component
 
 		vars
 	end
+
+	def removed(entity)
+	end
 end
 
 class UuidComponent < Component
@@ -40,11 +43,20 @@ class LocationComponent < Component
 end
 
 class MovementGoalComponent < Component
-	attr_accessor :path, :arrival_time
+	attr_accessor :lat, :lon, :arrival_time
+
+	def initialize(lat, lon)
+		@lat = lat
+		@lon = lon
+	end
 end
 
 class TopSpeedComponent < Component
-	attr_accessor :top_speed
+	attr_accessor :top_speed # MPH
+
+	def top_speed_meters_per_second
+		top_speed * 0.44704
+	end
 end
 
 class ForceMakeupComponent < Component

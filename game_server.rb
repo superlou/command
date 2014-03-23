@@ -13,6 +13,7 @@ class GameServer
 		puts "Starting server..."
 		@world = Artemis::World.new
 		@world.add_manager Artemis::GroupManager.new
+		@world.add_manager Artemis::TagManager.new
 
 		load_systems
 
@@ -25,6 +26,9 @@ class GameServer
 					 )
 			c.add_to_world
 			@world.get_manager(Artemis::GroupManager).add(c, "cities")
+			@world.get_manager(Artemis::TagManager).register(
+				c.get_component(UuidComponent).uuid, c
+			)
 		end
 
 		force = @world.create_entity(LocationComponent.new(39.96234, -75.26191),
@@ -33,6 +37,9 @@ class GameServer
 									 UuidComponent.new)
 		force.add_to_world
 		@world.get_manager(Artemis::GroupManager).add(force, "forces")
+		@world.get_manager(Artemis::TagManager).register(
+				force.get_component(UuidComponent).uuid, force
+		)
 
 
 		@counter = 1
@@ -43,6 +50,10 @@ class GameServer
 				if msg['type'] == "new_client_connection"
 					player = @world.create_entity(PlayerComponent.new, FayeClientComponent.new(client))
 					player.add_to_world
+				elsif msg['type'] == "player_cmd"
+					force = @world.get_manager(Artemis::TagManager).get_entity(msg['force_uuid'])
+					force.add_component(MovementGoalComponent.new(msg['goal'][0], msg['goal'][1]))
+					force.add_to_world
 				end
 			end
 
@@ -53,7 +64,7 @@ class GameServer
 	end
 
 	def world_step
-		@world.delta = @counter
+		@world.delta = 60 # seconds
 		@world.process
 		@counter += 1
 	end
